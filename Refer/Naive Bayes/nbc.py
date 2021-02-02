@@ -173,11 +173,11 @@ def TextClassifier(train_feature_list, test_feature_list, train_class_list, test
 
 if __name__ == '__main__':
 	#文本预处理
-	folder_path = './SogouC/Sample'				#训练集存放地址
+	folder_path = 'SogouC/Sample'  #训练集存放地址
 	all_words_list, train_data_list, test_data_list, train_class_list, test_class_list = TextProcessing(folder_path, test_size=0.2)
 
 	# 生成stopwords_set
-	stopwords_file = './stopwords_cn.txt'
+	stopwords_file = 'stopwords_cn.txt'
 	stopwords_set = MakeWordsSet(stopwords_file)
 
 
