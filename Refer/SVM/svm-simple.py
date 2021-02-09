@@ -135,7 +135,7 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
 	dataMatrix = np.mat(dataMatIn); labelMat = np.mat(classLabels).transpose()
 	#初始化b参数，统计dataMatrix的维度
 	b = 0; m,n = np.shape(dataMatrix)
-	#初始化alpha参数，设为0
+	#初始化alpha参数，设为0,  m行 1列
 	alphas = np.mat(np.zeros((m,1)))
 	#初始化迭代次数
 	iter_num = 0
